@@ -13,6 +13,8 @@ searchform.addEventListener("submit", function (event) {
     return;
   }
 
+  showText("Поиск...");
+
   searchRepo(search, 10)
     .then((repos) => showRepos(repos))
     .catch((error) => showError(error));
@@ -46,9 +48,10 @@ function showRepos(repos) {
 
 function showText(text) {
   clearResults();
+
   const titleEl = document.createElement("h3");
   titleEl.innerText = text;
-  resultsEl.append(titleEl);
+  resultsEl.prepend(titleEl);
 }
 
 function clearResults() {
