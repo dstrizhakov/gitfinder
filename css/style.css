@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+h1
+{
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	text-align: center;
+}
+
+body {
+	background-color: aliceblue;
+	font-family: Arial, sans-serif;
+	line-height: 130%;
+}
+
+.container {
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+.gitfinder {
+
+}
+.form {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.form .search {	
+	flex: 1 1 auto;
+	margin-right: 1rem;
+}
+.search input {
+	width: 100%;
+	padding: 0.6rem;
+	border: 1px solid teal;
+  outline-color: teal;
+  border-radius: 0.3rem;
+}
+.search span {
+	display: none;
+}
+
+.error span {
+	display: block;
+	position: absolute;
+	font-size: 0.8rem;
+	color: red;
+	bottom: -1.2rem;
+	left: 0.5rem;
+}
+
+.error input {
+	border: 1px solid rgb(255, 3, 108);
+  outline-color: rgb(255, 3, 108);
+}
+.form button {
+  color: #fff;
+  background-color: teal;
+  padding: 0.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.3rem;
+  text-align: center;
+	cursor: pointer;
+  transition: all 0.25s ease 0s;
+}
+
+.form button:hover {
+  background-color: rgba(0, 128, 128, 0.8);
+}
+.results {
+	margin: 2rem 0;
+}
+
+.results h3 {
+	text-align: center;
+}
+
+.repo {
+	border-radius: 0.3rem;
+}
+.repo-title {
+	font-size: 1.2rem;
+	padding: 0 0.4rem;
+}
+.repo-details {
+	border-top: 1px dotted teal;
+	border-bottom: 1px dotted teal;
+	margin-top: 0.2rem;
+	padding: 0.4rem;
+	background-color: #fff;
+}
