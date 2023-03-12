@@ -11,15 +11,14 @@
 		<div class="container">
 				<div class="gitfinder">
 					<h1>Поиск репозиториев Github</h1>
-					<form action="submit" class="form">
-						<div class="search error">
-							<input type="text" placeholder="Поисковой запрос" tabindex="1">
-							<span>Ошибка! Это поле не должно быть пустым.</span>
+					<form action="submit" name="searchform" class="form">
+						<div class="search">
+							<input type="text" name="searchInput" placeholder="Поисковой запрос" tabindex="1">
+							<span>Ошибка! Это поле должно быть более 3 символов.</span>
 						</div>
 						<button tabindex="2">Поиск</button>
 					</form>
 					<div class="results">
-						<h3>По вашему запросу ничего не найдено...</h3>
 						<!-- <div class="repo">
 							<a href="" class="repo-title">Repo title</a>
 							<div class="repo-details">
